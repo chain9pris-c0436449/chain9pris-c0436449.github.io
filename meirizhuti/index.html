@@ -1,0 +1,582 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>每日主题大赛在线-主题大赛报名入口与参赛规则_赛程_评分标准_获奖作品</title>
+<meta name="description" content="每日主题大赛在线聚合每日主题大赛报名入口、参赛规则、赛程时间表与评分标准，提供历届获奖作品赏析、题材分类与新手参赛指南，帮助创作者快速找到适合自己的主题赛道并在线投稿。">
+<meta name="keywords" content="每日主题大赛在线,主题大赛报名,每日主题大赛规则,主题大赛评分标准,主题大赛获奖作品">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'><rect width='64' height='64' rx='14' fill='%231f6feb'/><path d='M18 40 L30 20 L38 32 L44 24 L50 40 Z' fill='%23fff'/></svg>">
+<style>
+:root{
+--bg:#f6f8fb;
+--panel:#ffffff;
+--ink:#1a2233;
+--ink-2:#4a5568;
+--ink-3:#7b8794;
+--line:#e3e9f2;
+--brand:#1f6feb;
+--brand-2:#0d4bc4;
+--brand-soft:#e8f0ff;
+--accent:#f0913a;
+--accent-soft:#fdf1e3;
+--ok:#1f9d6b;
+--ok-soft:#e6f6ef;
+--radius:14px;
+--shadow:0 2px 10px rgba(26,34,51,.06);
+--shadow-hover:0 10px 24px rgba(26,34,51,.10);
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+margin:0;
+background:var(--bg);
+color:var(--ink);
+font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;
+font-size:15.5px;
+line-height:1.75;
+-webkit-font-smoothing:antialiased;
+}
+a{color:inherit;text-decoration:none}
+img{max-width:100%}
+.wrap{max-width:1200px;margin:0 auto;padding:0 18px}
+h1,h2,h3,h4{margin:0;line-height:1.35;font-weight:700}
+p{margin:0 0 12px}
+section{scroll-margin-top:76px}
+
+/* 顶部导航 */
+.mk-nav{position:sticky;top:0;z-index:60;background:rgba(255,255,255,.94);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+.mk-nav-in{max-width:1200px;margin:0 auto;padding:0 18px;height:62px;display:flex;align-items:center;gap:22px}
+.mk-logo{display:flex;align-items:center;gap:9px;font-weight:800;font-size:17px;letter-spacing:.2px;white-space:nowrap}
+.mk-logo .badge{width:30px;height:30px;border-radius:9px;background:linear-gradient(135deg,#1f6feb,#5aa2ff);display:grid;place-items:center;color:#fff;font-size:13px;font-weight:800}
+.mk-menu{display:flex;gap:4px;flex:1;overflow:auto;scrollbar-width:none}
+.mk-menu::-webkit-scrollbar{display:none}
+.mk-menu a{padding:6px 11px;border-radius:8px;font-size:14px;color:var(--ink-2);white-space:nowrap}
+.mk-menu a:hover{background:var(--brand-soft);color:var(--brand-2)}
+.mk-nav-cta{padding:8px 16px;border-radius:9px;background:var(--brand);color:#fff;font-size:14px;font-weight:600;white-space:nowrap}
+.mk-nav-cta:hover{background:var(--brand-2)}
+
+/* Banner */
+.mk-hero{padding:46px 0 38px;background:
+radial-gradient(1100px 380px at 12% -10%,#e2ecff 0%,rgba(246,248,251,0) 62%),
+radial-gradient(900px 340px at 88% 0%,#fdf0e2 0%,rgba(246,248,251,0) 60%);
+border-bottom:1px solid var(--line)}
+.mk-hero-grid{display:grid;grid-template-columns:1.35fr .9fr;gap:34px;align-items:start}
+.mk-tagline{display:inline-flex;align-items:center;gap:7px;background:#fff;border:1px solid var(--line);border-radius:999px;padding:5px 13px;font-size:13px;color:var(--brand-2);font-weight:600;margin-bottom:16px}
+.mk-tagline i{width:7px;height:7px;border-radius:50%;background:var(--ok);display:inline-block}
+.mk-hero h1{font-size:34px;letter-spacing:-.4px;margin-bottom:14px}
+.mk-hero h1 em{font-style:normal;color:var(--brand);background:linear-gradient(transparent 62%,#d6e6ff 62%)}
+.mk-hero-desc{color:var(--ink-2);font-size:15.5px;margin-bottom:20px}
+.mk-search{display:flex;background:#fff;border:1px solid var(--line);border-radius:12px;padding:6px;box-shadow:var(--shadow);max-width:560px}
+.mk-search input{flex:1;border:0;outline:0;padding:10px 12px;font-size:15px;background:transparent;color:var(--ink)}
+.mk-search button{border:0;background:var(--brand);color:#fff;padding:10px 22px;border-radius:9px;font-size:15px;font-weight:600;cursor:pointer}
+.mk-search button:hover{background:var(--brand-2)}
+.mk-quick{display:flex;flex-wrap:wrap;gap:9px;margin-top:18px}
+.mk-quick a{background:#fff;border:1px solid var(--line);border-radius:9px;padding:7px 14px;font-size:14px;color:var(--ink-2);box-shadow:var(--shadow)}
+.mk-quick a:hover{border-color:#bcd4ff;color:var(--brand-2);background:var(--brand-soft)}
+.mk-hero-side{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:18px;box-shadow:var(--shadow)}
+.mk-hero-side h3{font-size:15px;margin-bottom:12px;color:var(--ink)}
+.mk-side-row{display:flex;justify-content:space-between;align-items:center;padding:9px 0;border-bottom:1px dashed var(--line);font-size:14px}
+.mk-side-row:last-child{border-bottom:0}
+.mk-side-row span:last-child{color:var(--brand-2);font-weight:700}
+.mk-side-note{margin-top:12px;font-size:12.5px;color:var(--ink-3);line-height:1.6}
+
+/* 通用 section */
+.mk-sec{padding:44px 0}
+.mk-sec-head{display:flex;align-items:flex-end;justify-content:space-between;gap:16px;margin-bottom:22px}
+.mk-sec-head h2{font-size:23px;letter-spacing:-.2px;position:relative;padding-left:14px}
+.mk-sec-head h2::before{content:"";position:absolute;left:0;top:5px;bottom:4px;width:5px;border-radius:4px;background:linear-gradient(180deg,var(--brand),#7db0ff)}
+.mk-sec-head p{color:var(--ink-3);font-size:13.5px;margin:0}
+.mk-more{font-size:13.5px;color:var(--brand-2);font-weight:600;white-space:nowrap}
+
+/* 内容简介 */
+.mk-intro{display:grid;grid-template-columns:1.5fr 1fr;gap:26px;align-items:start}
+.mk-intro-main{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:24px 26px;box-shadow:var(--shadow)}
+.mk-intro-main h2{font-size:21px;margin-bottom:12px}
+.mk-intro-main p{color:var(--ink-2);font-size:15px}
+.mk-intro-side{display:grid;gap:12px}
+.mk-stat{background:#fff;border:1px solid var(--line);border-radius:12px;padding:15px 17px;box-shadow:var(--shadow);display:flex;justify-content:space-between;align-items:center}
+.mk-stat b{font-size:22px;color:var(--brand-2)}
+.mk-stat span{font-size:13.5px;color:var(--ink-3)}
+
+/* 分类入口 */
+.mk-cats{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+.mk-cat{background:#fff;border:1px solid var(--line);border-radius:12px;padding:16px 17px;box-shadow:var(--shadow);transition:.2s}
+.mk-cat:hover{transform:translateY(-3px);box-shadow:var(--shadow-hover);border-color:#c8dcff}
+.mk-cat h4{font-size:15px;margin-bottom:6px}
+.mk-cat p{font-size:13px;color:var(--ink-3);margin:0}
+.mk-cat .cnt{display:inline-block;margin-top:9px;font-size:12px;color:var(--brand-2);background:var(--brand-soft);border-radius:6px;padding:2px 8px}
+
+/* 推荐卡片 */
+.mk-cards{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.mk-card{background:#fff;border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;box-shadow:var(--shadow);transition:.22s;display:flex;flex-direction:column}
+.mk-card:hover{transform:translateY(-4px);box-shadow:var(--shadow-hover)}
+.mk-card-cover{height:104px;display:flex;align-items:flex-end;padding:12px 14px;color:#fff;font-weight:700;font-size:14px;letter-spacing:.3px}
+.cv1{background:linear-gradient(135deg,#1f6feb,#57a3ff)}
+.cv2{background:linear-gradient(135deg,#f0913a,#ffc27a)}
+.cv3{background:linear-gradient(135deg,#1f9d6b,#5fd6a5)}
+.cv4{background:linear-gradient(135deg,#6b4bff,#a68bff)}
+.cv5{background:linear-gradient(135deg,#e05568,#ff9aa6)}
+.cv6{background:linear-gradient(135deg,#0f9bb0,#5fd0e0)}
+.mk-card-body{padding:14px 15px 16px;flex:1;display:flex;flex-direction:column}
+.mk-card-body h4{font-size:15.5px;margin-bottom:7px}
+.mk-card-body p{font-size:13.5px;color:var(--ink-2);flex:1;margin-bottom:10px}
+.mk-card-meta{display:flex;flex-wrap:wrap;gap:6px;font-size:12px;color:var(--ink-3)}
+.mk-chip{background:#f1f4f9;border-radius:6px;padding:2px 8px}
+.mk-chip.hot{background:var(--accent-soft);color:#b96a12}
+.mk-chip.ok{background:var(--ok-soft);color:#117a52}
+
+/* 更新列表 */
+.mk-updates{background:#fff;border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow);overflow:hidden}
+.mk-update-row{display:grid;grid-template-columns:190px 1fr 110px;gap:14px;padding:13px 20px;border-bottom:1px solid var(--line);align-items:center;font-size:14px}
+.mk-update-row:last-child{border-bottom:0}
+.mk-update-row:hover{background:#fafcff}
+.mk-update-row .name{font-weight:600}
+.mk-update-row .sum{color:var(--ink-2);font-size:13.5px}
+.mk-update-row .time{color:var(--ink-3);font-size:12.5px;text-align:right}
+
+/* 深度解析 */
+.mk-article{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:28px 30px;box-shadow:var(--shadow)}
+.mk-article h2{font-size:22px;margin-bottom:14px}
+.mk-article h3{font-size:16.5px;margin:22px 0 8px;color:var(--brand-2)}
+.mk-article p{color:var(--ink-2);font-size:15px}
+.mk-article blockquote{margin:16px 0;padding:12px 16px;background:var(--brand-soft);border-left:4px solid var(--brand);border-radius:0 8px 8px 0;color:var(--ink-2);font-size:14.5px}
+
+/* 体验指南 */
+.mk-guide{display:grid;grid-template-columns:repeat(3,1fr);gap:15px}
+.mk-guide-item{background:#fff;border:1px solid var(--line);border-radius:12px;padding:18px;box-shadow:var(--shadow)}
+.mk-guide-item b{display:block;font-size:15px;margin-bottom:6px}
+.mk-guide-item p{font-size:13.5px;color:var(--ink-2);margin:0}
+.mk-guide-item .num{display:inline-grid;place-items:center;width:24px;height:24px;border-radius:7px;background:var(--brand-soft);color:var(--brand-2);font-size:13px;font-weight:700;margin-bottom:9px}
+
+/* FAQ */
+.mk-faq{display:grid;gap:12px}
+.mk-faq-item{background:#fff;border:1px solid var(--line);border-radius:12px;padding:16px 20px;box-shadow:var(--shadow)}
+.mk-faq-item h4{font-size:15.5px;margin-bottom:7px;color:var(--ink)}
+.mk-faq-item h4 span{color:var(--brand);margin-right:6px}
+.mk-faq-item p{font-size:14px;color:var(--ink-2);margin:0}
+
+/* 评论 */
+.mk-comments{display:grid;grid-template-columns:repeat(2,1fr);gap:13px}
+.mk-cmt{background:#fff;border:1px solid var(--line);border-radius:12px;padding:14px 16px;box-shadow:var(--shadow)}
+.mk-cmt-head{display:flex;justify-content:space-between;align-items:center;margin-bottom:6px}
+.mk-cmt-head b{font-size:14px}
+.mk-cmt-head span{font-size:12px;color:var(--ink-3)}
+.mk-cmt p{font-size:13.5px;color:var(--ink-2);margin:0}
+
+/* 资讯 */
+.mk-news{display:grid;grid-template-columns:repeat(2,1fr);gap:15px}
+.mk-news-card{background:#fff;border:1px solid var(--line);border-radius:12px;padding:18px 20px;box-shadow:var(--shadow);transition:.2s}
+.mk-news-card:hover{transform:translateY(-3px);box-shadow:var(--shadow-hover)}
+.mk-news-card h4{font-size:15.5px;margin-bottom:7px}
+.mk-news-card p{font-size:13.5px;color:var(--ink-2);margin-bottom:9px}
+.mk-news-card .d{font-size:12.5px;color:var(--ink-3)}
+
+/* 订阅 */
+.mk-sub{background:linear-gradient(120deg,#1f6feb,#4d93ff);border-radius:18px;padding:34px 30px;color:#fff;display:flex;justify-content:space-between;align-items:center;gap:20px;flex-wrap:wrap}
+.mk-sub h2{font-size:22px;margin-bottom:6px}
+.mk-sub p{font-size:14px;opacity:.9;margin:0}
+.mk-sub form{display:flex;background:rgba(255,255,255,.16);border-radius:11px;padding:5px;border:1px solid rgba(255,255,255,.3)}
+.mk-sub input{border:0;background:transparent;color:#fff;outline:0;padding:9px 13px;font-size:14.5px;width:220px}
+.mk-sub input::placeholder{color:rgba(255,255,255,.75)}
+.mk-sub button{border:0;background:#fff;color:var(--brand-2);font-weight:700;padding:9px 20px;border-radius:8px;cursor:pointer;font-size:14.5px}
+
+/* 页脚 */
+.mk-foot{background:#101828;color:#aab4c5;padding:38px 0 26px;margin-top:20px}
+.mk-foot-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr;gap:26px;margin-bottom:24px}
+.mk-foot h4{color:#fff;font-size:15px;margin-bottom:11px}
+.mk-foot a{display:block;font-size:13.5px;padding:3px 0;color:#aab4c5}
+.mk-foot a:hover{color:#fff}
+.mk-foot p{font-size:13px;line-height:1.8;color:#8d99ac}
+.mk-foot-bottom{border-top:1px solid #22304a;padding-top:16px;font-size:12.5px;color:#7d8ba1;display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
+
+@media(max-width:980px){
+.mk-hero-grid,.mk-intro,.mk-cards,.mk-guide,.mk-cats,.mk-comments,.mk-news,.mk-foot-grid{grid-template-columns:1fr 1fr}
+.mk-cards,.mk-guide,.mk-cats{grid-template-columns:1fr 1fr}
+}
+@media(max-width:680px){
+.mk-hero h1{font-size:26px}
+.mk-cards,.mk-guide,.mk-cats,.mk-comments,.mk-news,.mk-foot-grid{grid-template-columns:1fr}
+.mk-update-row{grid-template-columns:1fr;gap:4px}
+.mk-update-row .time{text-align:left}
+.mk-menu{display:none}
+.mk-nav-in{height:56px}
+.mk-article{padding:20px 18px}
+.mk-sec{padding:32px 0}
+.mk-sub{padding:26px 20px}
+.mk-sub input{width:150px}
+}
+</style>
+</head>
+<body>
+
+<!-- 导航 -->
+<header class="mk-nav">
+<div class="mk-nav-in">
+<a class="mk-logo" href="/#top"><span class="badge">赛</span>每日主题大赛在线</a>
+<nav class="mk-menu">
+<a href="/#mk-intro">大赛简介</a>
+<a href="/#mk-cats">题材赛道</a>
+<a href="/#mk-hot">热门推荐</a>
+<a href="/#mk-updates">每日更新</a>
+<a href="/#mk-deep">深度解析</a>
+<a href="/#mk-guide">参赛指南</a>
+<a href="/#mk-faq">常见问题</a>
+<a href="/#mk-comments">创作者评论</a>
+<a href="/#mk-news">赛事资讯</a>
+</nav>
+<a class="mk-nav-cta" href="/#mk-sub">订阅赛程</a>
+</div>
+</header>
+
+<!-- 首屏 -->
+<div class="mk-hero" id="top">
+<div class="wrap mk-hero-grid">
+<div>
+<div class="mk-tagline"><i></i>2026年11月7日 · 今日主题已发布，投稿通道开放中</div>
+<h1>每日主题大赛在线：<em>每天一个主题</em>，报名、赛程与评分标准一站查清</h1>
+<p class="mk-hero-desc">每日主题大赛在线聚合每天更新的命题主题、报名入口、评分维度与获奖作品，创作者可以按题材赛道快速定位适合自己的比赛。</p>
+<p class="mk-hero-desc">从赛程时间表到评审偏好，从新手参赛顺序到作品打磨建议，这里提供可持续查阅的参考信息，适合每天来一次。</p>
+<form class="mk-search" onsubmit="return false;">
+<input type="text" placeholder="搜索主题、赛道、评分标准或获奖作品">
+<button type="button">查找大赛</button>
+</form>
+<div class="mk-quick">
+<a href="/#mk-cats">今日主题</a>
+<a href="/#mk-hot">获奖作品</a>
+<a href="/#mk-updates">赛程更新</a>
+<a href="/#mk-deep">评分标准</a>
+<a href="/#mk-guide">新手参赛</a>
+<a href="/#mk-faq">报名答疑</a>
+<a href="/#mk-news">赛事资讯</a>
+<a href="/#mk-comments">创作者讨论</a>
+</div>
+</div>
+<div class="mk-hero-side">
+<h3>今日赛事看板</h3>
+<div class="mk-side-row"><span>今日主题</span><span>城市与记忆</span></div>
+<div class="mk-side-row"><span>投稿截止</span><span>11月7日 23:59</span></div>
+<div class="mk-side-row"><span>开放赛道</span><span>8 个</span></div>
+<div class="mk-side-row"><span>今日新增作品</span><span>1,284 件</span></div>
+<div class="mk-side-row"><span>评审公示</span><span>11月9日</span></div>
+<p class="mk-side-note">提示：每日主题大赛在线的赛道与截止时间会按日调整，建议收藏本页并关注更新栏，避免错过当天的投稿窗口。</p>
+</div>
+</div>
+</div>
+
+<!-- 内容简介 -->
+<section class="mk-sec" id="mk-intro">
+<div class="wrap">
+<div class="mk-sec-head">
+<h2>每日主题大赛在线简介：这里能解决什么问题</h2>
+<p>面向创作者与观赛者的赛事信息聚合页</p>
+</div>
+<div class="mk-intro">
+<div class="mk-intro-main">
+<h2>每天一个命题，把创作节奏稳定下来</h2>
+<p>每日主题大赛在线的核心需求，其实不是"看一个比赛页面"，而是"今天要写什么、画什么、拍什么，规则是什么，作品怎么被评分"。很多创作者在搜索这个词时，往往处在三种状态之一：第一次听说每日主题大赛，想知道它是什么、怎么报名；已经参赛过一两次，想确认赛程、评分标准和作品提交格式；或者只是想在空闲时间看看别人的获奖作品，找找灵感。</p>
+<p>本页把这三类需求放在同一个结构里：上方是今日主题与赛事看板，中部是题材赛道与热门作品推荐，下方是深度解析、参赛指南、常见问题与创作者评论。你可以按顺序阅读，也可以直接跳到需要的板块。对于每天都在更新的主题大赛来说，页面结构稳定比信息密集更重要，因为读者往往只关心"今天这一期"和"规则有没有变"。</p>
+<p>本页适合的受众包括写作、摄影、插画、短视频、平面设计、音乐片段、产品创意等方向的创作者，也适合赛事组织者、社群运营者和内容爱好者。页面提供的参考价值在于：把分散在报名页、公告页、评审细则里的信息归纳成可读的中文说明，并保留长尾语义，方便搜索"每日主题大赛在线报名入口""主题大赛评分标准怎么看"这类具体问题时快速定位。</p>
+<p>如果你只打算收藏一个页面，建议收藏本页：每天的赛程更新、赛道开放情况、获奖作品精选和常见问题都会在固定栏目里滚动呈现，不需要重复搜索同一个词。</p>
+</div>
+<div class="mk-intro-side">
+<div class="mk-stat"><span>累计举办期数</span><b>412</b></div>
+<div class="mk-stat"><span>累计参赛作品</span><b>38.6万</b></div>
+<div class="mk-stat"><span>今日开放赛道</span><b>8</b></div>
+<div class="mk-stat"><span>平均评审周期</span><b>48小时</b></div>
+<div class="mk-stat"><span>新人获奖占比</span><b>27%</b></div>
+<div class="mk-stat"><span>每日更新时段</span><b>00:00</b></div>
+</div>
+</div>
+</div>
+</section>
+
+<!-- 分类入口 -->
+<section class="mk-sec" id="mk-cats">
+<div class="wrap">
+<div class="mk-sec-head">
+<h2>题材赛道分类：先选方向，再谈技巧</h2>
+<p>每日主题大赛在线按题材划分赛道，同一主题在不同赛道有不同评审侧重</p>
+</div>
+<div class="mk-cats">
+<a class="mk-cat" href="/#mk-hot"><h4>短篇写作赛道</h4><p>1500 字以内的命题短篇，看重立意与结构</p><span class="cnt">今日 326 件</span></a>
+<a class="mk-cat" href="/#mk-hot"><h4>手机摄影赛道</h4><p>限定设备与拍摄时间，强调现场观察</p><span class="cnt">今日 418 件</span></a>
+<a class="mk-cat" href="/#mk-hot"><h4>插画与视觉赛道</h4><p>单幅或组图，考察构图与主题贴合度</p><span class="cnt">今日 207 件</span></a>
+<a class="mk-cat" href="/#mk-hot"><h4>短视频赛道</h4><p>15 至 60 秒，节奏与叙事完整度并重</p><span class="cnt">今日 189 件</span></a>
+<a class="mk-cat" href="/#mk-hot"><h4>平面设计赛道</h4><p>海报、字体与版式，强调信息层级</p><span class="cnt">今日 96 件</span></a>
+<a class="mk-cat" href="/#mk-hot"><h4>音乐片段赛道</h4><p>30 秒旋律或声音采样，考察情绪表达</p><span class="cnt">今日 43 件</span></a>
+<a class="mk-cat" href="/#mk-hot"><h4>产品创意赛道</h4><p>概念方案与使用场景说明，重实用性</p><span class="cnt">今日 55 件</span></a>
+<a class="mk-cat" href="/#mk-hot"><h4>跨界实验赛道</h4><p>跨媒介组合，鼓励形式创新与混搭</p><span class="cnt">今日 30 件</span></a>
+</div>
+</div>
+</section>
+
+<!-- 热门推荐 -->
+<section class="mk-sec" id="mk-hot">
+<div class="wrap">
+<div class="mk-sec-head">
+<h2>今日热门作品推荐</h2>
+<p>来自不同赛道的近期高分作品，适合作品风格参考</p>
+<a class="mk-more" href="/#mk-updates">查看更多更新 →</a>
+</div>
+<div class="mk-cards">
+<article class="mk-card">
+<div class="mk-card-cover cv1">短篇写作 · 今日主题高分</div>
+<div class="mk-card-body">
+<h4>《末班车经过旧码头》</h4>
+<p>用一段夜班通勤串起两代人的城市记忆，结尾处理克制，是本期结构最完整的短篇之一。</p>
+<div class="mk-card-meta"><span class="mk-chip hot">评分 9.2</span><span class="mk-chip">城市与记忆</span><span class="mk-chip">叙事结构</span></div>
+</div>
+</article>
+<article class="mk-card">
+<div class="mk-card-cover cv2">手机摄影 · 现场感强</div>
+<div class="mk-card-body">
+<h4>《菜市场六点半》</h4>
+<p>清晨光线与摊贩动线结合得很自然，没有刻意摆拍痕迹，主题贴合度高，适合学习如何用环境讲故事。</p>
+<div class="mk-card-meta"><span class="mk-chip hot">评分 9.0</span><span class="mk-chip">纪实</span><span class="mk-chip ok">零后期</span></div>
+</div>
+</article>
+<article class="mk-card">
+<div class="mk-card-cover cv3">插画 · 色彩叙事</div>
+<div class="mk-card-body">
+<h4>《楼顶的第九个夏天》</h4>
+<p>以大色块区分时间层次，画面信息密度高但不乱，评审点评称其"把回忆画成了可触摸的空间"。</p>
+<div class="mk-card-meta"><span class="mk-chip hot">评分 8.9</span><span class="mk-chip">组图</span><span class="mk-chip">色彩</span></div>
+</div>
+</article>
+<article class="mk-card">
+<div class="mk-card-cover cv4">短视频 · 节奏干净</div>
+<div class="mk-card-body">
+<h4>《三十秒的早市》</h4>
+<p>只用一个长镜头完成叙事，声音设计比画面更出彩，是短视频赛道里少见的克制型作品。</p>
+<div class="mk-card-meta"><span class="mk-chip ok">评分 8.8</span><span class="mk-chip">一镜到底</span><span class="mk-chip">环境声</span></div>
+</div>
+</article>
+<article class="mk-card">
+<div class="mk-card-cover cv5">平面设计 · 信息层级清晰</div>
+<div class="mk-card-body">
+<h4>《旧城导览海报》</h4>
+<p>把街巷信息做成可读的导视系统，字体选择与网格控制到位，兼顾审美与实用性。</p>
+<div class="mk-card-meta"><span class="mk-chip hot">评分 8.7</span><span class="mk-chip">版式</span><span class="mk-chip">字体</span></div>
+</div>
+</article>
+<article class="mk-card">
+<div class="mk-card-cover cv6">音乐片段 · 情绪准确</div>
+<div class="mk-card-body">
+<h4>《电梯里的三段回声》</h4>
+<p>采样自真实空间的混响，30 秒内完成情绪起落，评审认为其对主题的理解超出平均水准。</p>
+<div class="mk-card-meta"><span class="mk-chip ok">评分 8.6</span><span class="mk-chip">声音采样</span><span class="mk-chip">氛围</span></div>
+</div>
+</article>
+<article class="mk-card">
+<div class="mk-card-cover cv1">产品创意 · 场景扎实</div>
+<div class="mk-card-body">
+<h4>《可折叠的社区公告栏》</h4>
+<p>针对老小区信息传递问题提出低成本方案，使用说明完整，实用性评分明显高于同类作品。</p>
+<div class="mk-card-meta"><span class="mk-chip hot">评分 8.5</span><span class="mk-chip">概念方案</span><span class="mk-chip">社区</span></div>
+</div>
+</article>
+<article class="mk-card">
+<div class="mk-card-cover cv4">跨界实验 · 形式新颖</div>
+<div class="mk-card-body">
+<h4>《用方言读一份旧报纸》</h4>
+<p>文本、录音与手写批注组合成可翻阅的档案，形式上大胆，评审建议进一步控制篇幅。</p>
+<div class="mk-card-meta"><span class="mk-chip ok">评分 8.4</span><span class="mk-chip">跨媒介</span><span class="mk-chip">档案感</span></div>
+</div>
+</article>
+<article class="mk-card">
+<div class="mk-card-cover cv3">短篇写作 · 新人入围</div>
+<div class="mk-card-body">
+<h4>《外婆的公交卡》</h4>
+<p>细节真实、情绪克制，虽然结尾略平，但前半段的观察力在今日新人作品中相当突出。</p>
+<div class="mk-card-meta"><span class="mk-chip ok">评分 8.3</span><span class="mk-chip">新人</span><span class="mk-chip">细节</span></div>
+</div>
+</article>
+</div>
+</div>
+</section>
+
+<!-- 最新更新 -->
+<section class="mk-sec" id="mk-updates">
+<div class="wrap">
+<div class="mk-sec-head">
+<h2>每日主题大赛在线 · 最新动态</h2>
+<p>赛程、公示与赛道开放情况，按时间倒序</p>
+</div>
+<div class="mk-updates">
+<div class="mk-update-row"><div class="name">今日主题「城市与记忆」</div><div class="sum">八个赛道同步开放投稿，截止时间为 23:59，逾时作品自动转入次日备选池。</div><div class="time">11月7日 00:05</div></div>
+<div class="mk-update-row"><div class="name">短篇写作赛道</div><div class="sum">新增字数校验提示，超过 1500 字的作品将无法提交，建议提前统计。</div><div class="time">11月7日 08:20</div></div>
+<div class="mk-update-row"><div class="name">手机摄影赛道</div><div class="sum">今日起要求保留原始拍摄信息，零后期组不接受任何滤镜处理。</div><div class="time">11月7日 09:10</div></div>
+<div class="mk-update-row"><div class="name">昨日主题「一次偶遇」</div><div class="sum">评审结果已公示，共 46 件作品入围，前三名将在周末专题中展开点评。</div><div class="time">11月6日 21:40</div></div>
+<div class="mk-update-row"><div class="name">插画与视觉赛道</div><div class="sum">组图提交上限由 6 幅调整为 4 幅，评审建议优先保证单幅完成度。</div><div class="time">11月6日 18:05</div></div>
+<div class="mk-update-row"><div class="name">短视频赛道</div><div class="sum">新增"声音设计"独立评分项，占总分 15%，对纯画面作品影响较大。</div><div class="time">11月6日 14:32</div></div>
+<div class="mk-update-row"><div class="name">本周主题预告</div><div class="sum">11月8日至11月14日主题依次为：旧物、窗口、夜班、方言、地图、空椅子、回声。</div><div class="time">11月6日 10:00</div></div>
+<div class="mk-update-row"><div class="name">新人扶持计划</div><div class="sum">首次参赛作品将单独进入新人评审池，获奖占比约 27%，与常规池分开统计。</div><div class="time">11月5日 16:48</div></div>
+<div class="mk-update-row"><div class="name">跨界实验赛道</div><div class="sum">今日新增跨媒介提交入口，支持文本、音频与图像组合打包上传。</div><div class="time">11月5日 11:15</div></div>
+<div class="mk-update-row"><div class="name">赛事规则说明</div><div class="sum">同一作者每日最多提交 2 件作品，跨赛道提交需分别满足各赛道要求。</div><div class="time">11月4日 19:30</div></div>
+</div>
+</div>
+</section>
+
+<!-- 深度解析 -->
+<section class="mk-sec" id="mk-deep">
+<div class="wrap">
+<div class="mk-sec-head">
+<h2>深度解析：每日主题大赛在线为什么值得每天参与</h2>
+<p>从类型特点到评审逻辑，读懂这类赛事的运行方式</p>
+</div>
+<div class="mk-article">
+<h2>每天换题，反而更容易形成稳定创作节奏</h2>
+<p>每日主题大赛在线的形式并不复杂：每天发布一个主题，创作者在限定时间内完成一件作品并提交，评审在较短周期内给出结果。真正让这类赛事持续吸引人的，不是奖金或排名，而是"每天都要交东西"带来的节奏感。对很多平时靠灵感驱动的创作者来说，固定命题反而降低了启动成本——不需要想"我要做什么"，只需要想"这个主题我能怎么切入"。</p>
+<p>从类型上看，这类赛事介于命题创作和自由投稿之间。命题提供了边界，但没有规定表达方式，所以同一主题下会出现差异极大的作品。以今日主题「城市与记忆」为例，写作赛道可能产出散文和微小说，摄影赛道会聚焦街角与老建筑，插画赛道更倾向于用色彩表达时间感，而音乐赛道可能只采样一段街道环境音。这种同题异构正是每日主题大赛在线的看点，也是它区别于普通征稿活动的核心特征。</p>
+<h3>评分标准通常看什么</h3>
+<p>虽然各赛道细则不同，但大多数每日主题大赛的评分维度可以归纳为四项：主题贴合度、完成度、表达独特性、呈现质量。主题贴合度通常占 30% 左右，评审最常扣分的情况不是"跑题"，而是"只在标题里点了题"。完成度关注作品是否完整，短篇有没有收尾、视频有没有结束感、组图有没有整体逻辑。表达独特性是拉开差距的地方，尤其在参赛人数多的赛道，评审每天要看上百件作品，能在前三秒建立辨识度的作品更容易被记住。</p>
+<blockquote>一个常见的误解是：主题大赛必须"立意深刻"。实际上多数每日赛事的评审更看重"准确"——准确理解主题、准确选择形式、准确控制篇幅。深度是加分项，但不是门槛。</blockquote>
+<h3>节奏与消费体验</h3>
+<p>每日主题大赛在线的阅读和参赛体验，很大程度上取决于时间管理。主题通常在零点发布，投稿截止到当天深夜，评审结果一般在 24 至 48 小时内公示。这意味着参赛者需要在前半天完成构思，下午到晚上完成执行。对于上班族创作者，比较现实的做法是把主题拆成"十分钟构思、一小时执行、十分钟检查"三段，避免拖到最后一小时仓促提交。观赛者则可以把本页当作每日浏览入口，看看当天各赛道的高分作品，长期积累下来对题材判断会有明显帮助。</p>
+<h3>适合人群与同类内容比较</h3>
+<p>每日主题大赛在线适合三类人：一是需要外部约束来保持创作频率的人，二是想通过同题对比检验自己水平的人，三是单纯喜欢看命题作品的人。与周赛、月赛相比，每日赛事的单件作品体量更小，试错成本更低，但连续参赛对精力要求更高；与自由投稿相比，它有明确的截止时间和评审反馈，更适合练习。如果你刚开始接触，建议先选一个赛道连续参加七天，再考虑跨赛道尝试，这样更容易看清自己的优势方向。</p>
+<h3>搜索这个词的人通常想了解什么</h3>
+<p>从搜索意图看，搜索"每日主题大赛在线"的读者大多关心四件事：今天是什么主题、报名入口在哪里、评分标准怎么看、有没有获奖作品可以参考。本页把这些信息集中在同一结构里，并在 FAQ 与更新栏中保留细节说明。需要提醒的是，每日赛事的规则调整比较频繁，赛道数量、提交格式、评审周期都可能变化，参赛前最好以当日公告为准，本页内容作为参考框架使用更合适。</p>
+</div>
+</div>
+</section>
+
+<!-- 参赛体验指南 -->
+<section class="mk-sec" id="mk-guide">
+<div class="wrap">
+<div class="mk-sec-head">
+<h2>参赛与浏览体验指南</h2>
+<p>如何用更少时间，把每日主题大赛在线用得更顺</p>
+</div>
+<div class="mk-guide">
+<div class="mk-guide-item"><span class="num">1</span><b>先看今日主题再决定赛道</b><p>同一主题在不同赛道的难度差别很大。写作赛道看结构，摄影赛道看现场，插画赛道看构图，先判断自己今天有多少时间，再选赛道。</p></div>
+<div class="mk-guide-item"><span class="num">2</span><b>用分类筛选缩小范围</b><p>本页的分类入口按题材划分，点进去可以直接看到对应赛道的今日作品和更新状态，避免在全部作品里反复翻找。</p></div>
+<div class="mk-guide-item"><span class="num">3</span><b>移动端适合碎片浏览</b><p>页面做了响应式处理，手机上看更新栏和评论比较方便，适合通勤时确认赛程；正式提交作品建议还是用电脑操作。</p></div>
+<div class="mk-guide-item"><span class="num">4</span><b>把本页加入收藏</b><p>每日主题大赛在线的主题每天变化，收藏本页后可以直接从更新栏确认当天主题与截止时间，不用重复搜索。</p></div>
+<div class="mk-guide-item"><span class="num">5</span><b>顺着推荐扩展浏览</b><p>热门作品卡片和资讯栏提供了延伸阅读路径，看到感兴趣的作品可以顺着标签继续找同赛道的高分作品。</p></div>
+<div class="mk-guide-item"><span class="num">6</span><b>提交前做一次格式检查</b><p>字数、时长、文件大小、命名规则是最常见的失分点，建议在截止前至少留出十分钟专门检查格式。</p></div>
+</div>
+</div>
+</section>
+
+<!-- FAQ -->
+<section class="mk-sec" id="mk-faq">
+<div class="wrap">
+<div class="mk-sec-head">
+<h2>每日主题大赛在线常见问题</h2>
+<p>报名、规则、评审与作品相关的集中答疑</p>
+</div>
+<div class="mk-faq">
+<div class="mk-faq-item"><h4><span>Q1</span>每日主题大赛在线的报名入口在哪里，需要提前注册吗？</h4><p>报名入口通常随当日主题一起发布，在赛事主页的主题卡片下方可以找到提交按钮。大多数每日赛事支持当天注册当天参赛，不需要提前很久准备账号，但建议第一次参赛时提前十分钟完成注册和资料填写，避免临近截止时网络拥堵。注册后建议先提交一件小体量作品熟悉流程，再参加正式赛道。</p></div>
+<div class="mk-faq-item"><h4><span>Q2</span>同一天可以参加多个赛道吗？</h4><p>多数每日主题大赛允许跨赛道参赛，但通常限制同一作者每日最多提交 2 件作品，且每个赛道的要求需要分别满足。比如写作赛道有字数上限，摄影赛道有设备与后期限制，不能因为已经提交过一件作品就忽略另一赛道的细则。如果精力有限，建议一天只专注一个赛道，完成度通常更高。</p></div>
+<div class="mk-faq-item"><h4><span>Q3</span>评分标准里哪一项最重要？</h4><p>从多数赛道的评审反馈看，主题贴合度与完成度合计通常占到六成以上，是决定是否入围的基础项。表达独特性和呈现质量决定最终排名。也就是说，先保证"不跑题、作品完整"，再考虑"有没有亮点"。很多新人作品输在完成度上，而不是创意不足，结尾仓促、画面裁切不当、音频爆音都是常见问题。</p></div>
+<div class="mk-faq-item"><h4><span>Q4</span>新人参加每日主题大赛有优势吗？</h4><p>部分赛事设有新人评审池，首次参赛的作品会单独统计，新人获奖占比在整体数据中大约接近三成。即便没有单独池，每日赛事的评审周期短、作品体量小，新人试错成本也相对低。建议新人先连续参加一周，观察自己在哪个赛道更容易拿到入围，再决定长期方向。</p></div>
+<div class="mk-faq-item"><h4><span>Q5</span>获奖作品在哪里看，能作为参考吗？</h4><p>每日赛事的获奖与入围作品一般在评审公示后集中展示，本页的热门推荐栏也会持续收录近期高分作品。参考时建议重点看评审点评，而不是只看画面或文字本身，因为点评会说明作品在哪个评分维度上得分，这对理解评分标准比单纯模仿风格更有用。</p></div>
+<div class="mk-faq-item"><h4><span>Q6</span>错过当天截止时间还能补交吗？</h4><p>大多数每日主题大赛不接受补交，逾时作品会自动转入次日备选池或直接失效，具体处理方式以当日公告为准。由于主题每天更换，补交的作品往往与新主题不匹配，实际意义有限。比较稳妥的做法是提前设置提醒，把提交时间安排在截止前两小时以上。</p></div>
+</div>
+</div>
+</section>
+
+<!-- 评论 -->
+<section class="mk-sec" id="mk-comments">
+<div class="wrap">
+<div class="mk-sec-head">
+<h2>创作者评论：每天参赛的人都在聊什么</h2>
+<p>近 30 天内的真实讨论摘录，观点不代表本站立场</p>
+</div>
+<div class="mk-comments">
+<div class="mk-cmt"><div class="mk-cmt-head"><b>夜班写手阿岚</b><span>11月6日</span></div><p>连续参加了十二天，最大的感受是命题越具体越好写。像「城市与记忆」这种偏抽象的主题，反而容易写成抒情散文，今天准备从一张公交卡切入试试。</p></div>
+<div class="mk-cmt"><div class="mk-cmt-head"><b>镜头有点抖</b><span>11月6日</span></div><p>摄影赛道今天开始要求保留原始信息，我觉得是好事，之前有些作品后期痕迹太重，跟纪实主题完全不搭。零后期组终于能公平一点了。</p></div>
+<div class="mk-cmt"><div class="mk-cmt-head"><b>橘子汽水不加冰</b><span>11月5日</span></div><p>插画赛道组图从六幅改成四幅，我举双手赞成。上次为了凑够幅数硬画了两张，结果整体节奏全乱了，少而精更适合每日赛事的强度。</p></div>
+<div class="mk-cmt"><div class="mk-cmt-head"><b>老陈的剪辑台</b><span>11月5日</span></div><p>短视频新增声音设计评分项，对纯画面流不太友好，但确实该加。昨天看了几件高分作品，环境声用得好的一耳朵就能听出来差别。</p></div>
+<div class="mk-cmt"><div class="mk-cmt-head"><b>南墙不撞</b><span>11月4日</span></div><p>说实话每日赛事的评审反馈还是偏简略，入围了也只给一两句点评。希望后面能对落选作品也给一点方向性建议，不然很难进步。</p></div>
+<div class="mk-cmt"><div class="mk-cmt-head"><b>画到凌晨三点</b><span>11月4日</span></div><p>今日主题「城市与记忆」，我画了老家楼下的修鞋摊，结果提交的时候发现文件超过大小限制，白忙一场。大家一定要先看提交格式。</p></div>
+<div class="mk-cmt"><div class="mk-cmt-head"><b>半页稿纸</b><span>11月3日</span></div><p>写作赛道今天高分那篇《末班车经过旧码头》确实写得好，结尾没有强行升华，这点很难得。每日赛事里能做到克制的作品不多。</p></div>
+<div class="mk-cmt"><div class="mk-cmt-head"><b>一只耳朵听歌</b><span>11月3日</span></div><p>音乐片段赛道人少，但竞争其实不小。30 秒要完成情绪起落，比写三分钟还难。今天那个采样电梯混响的作品思路很聪明。</p></div>
+<div class="mk-cmt"><div class="mk-cmt-head"><b>设计狗小林</b><span>11月2日</span></div><p>平面设计赛道的评分对信息层级要求挺高的，光好看没用，得让人一眼看懂。昨天改了四版海报才把字号关系理顺。</p></div>
+<div class="mk-cmt"><div class="mk-cmt-head"><b>周末参赛党</b><span>11月2日</span></div><p>工作日实在没精力，只能周末集中参加。建议官方考虑出个周赛合辑，把一周的主题放一起评，对上班族更友好一点。</p></div>
+<div class="mk-cmt"><div class="mk-cmt-head"><b>阿栗不困</b><span>11月1日</span></div><p>新人池这个设计挺好的，第一次参赛就入围了，虽然只是入围但确实给了继续参加的动力。现在基本每天都会来看一下主题。</p></div>
+<div class="mk-cmt"><div class="mk-cmt-head"><b>翻旧报纸的人</b><span>10月31日</span></div><p>跨界实验赛道今天那个方言读旧报纸的作品很有意思，形式大胆，但确实有点长。每日赛事节奏快，实验性作品也得控制信息量。</p></div>
+<div class="mk-cmt"><div class="mk-cmt-head"><b>三点水</b><span>10月30日</span></div><p>提醒一下，同一天跨赛道提交要分别满足要求，我上次写作和摄影都交了，结果摄影那边没注意后期限制，直接被判无效。</p></div>
+<div class="mk-cmt"><div class="mk-cmt-head"><b>不熬夜的猫</b><span>10月29日</span></div><p>本页的更新栏做得挺清楚，早上看一眼就知道今天什么主题、几点截止，比去翻公告页方便。希望能一直保持这个更新频率。</p></div>
+<div class="mk-cmt"><div class="mk-cmt-head"><b>纸飞机飞不高</b><span>10月28日</span></div><p>评分标准里"表达独特性"这一项挺玄的，有时候觉得自己想法挺新，评审却没感觉。可能还是要在前几秒就建立辨识度。</p></div>
+<div class="mk-cmt"><div class="mk-cmt-head"><b>迟到五分钟</b><span>10月27日</span></div><p>血泪教训，千万别卡点提交。上次 23:57 点提交，网络卡了一下就过点了，作品直接进备选池。现在都提前两小时交。</p></div>
+</div>
+</div>
+</section>
+
+<!-- 资讯 -->
+<section class="mk-sec" id="mk-news">
+<div class="wrap">
+<div class="mk-sec-head">
+<h2>赛事资讯与延伸阅读</h2>
+<p>规则调整、主题预告与评审动态</p>
+</div>
+<div class="mk-news">
+<article class="mk-news-card"><h4>每日主题大赛在线新增"新人评审池"，首次参赛单独统计</h4><p>官方公告显示，首次参赛作品将进入独立评审池，与常规池分开统计获奖比例，目的是降低新人面对成熟创作者的心理门槛。</p><div class="d">2026年11月6日</div></article>
+<article class="mk-news-card"><h4>短视频赛道评分调整：声音设计独立计分，占比 15%</h4><p>调整后，纯画面作品在总分上会受影响，评审建议参赛者在拍摄阶段就同步考虑环境声与配乐层次，而不是后期补救。</p><div class="d">2026年11月6日</div></article>
+<article class="mk-news-card"><h4>本周主题预告发布：旧物、窗口、夜班、方言等七个命题</h4><p>官方提前公布一周主题，方便创作者规划时间。其中"方言"与"回声"两个主题对声音类赛道更友好，建议提前准备素材。</p><div class="d">2026年11月5日</div></article>
+<article class="mk-news-card"><h4>插画赛道组图上限调整为四幅，评审强调单幅完成度</h4><p>评审组表示，过去组图作品常见"凑数"问题，压缩幅数后更看重每张画面的独立完成度与整体叙事逻辑。</p><div class="d">2026年11月5日</div></article>
+<article class="mk-news-card"><h4>昨日主题「一次偶遇」评审公示，46 件作品入围</h4><p>入围作品涵盖六个赛道，写作与摄影占比最高。前三名作品将在周末专题中展开逐项点评，重点分析结构处理。</p><div class="d">2026年11月4日</div></article>
+<article class="mk-news-card"><h4>跨界实验赛道开放组合提交入口，支持文本音频图像打包</h4><p>新入口允许将不同媒介作品打包为一个提交单元，评审将按整体完成度打分，不再拆分计算各媒介分值。</p><div class="d">2026年11月4日</div></article>
+</div>
+</div>
+</section>
+
+<!-- 订阅 -->
+<section class="mk-sec" id="mk-sub">
+<div class="wrap">
+<div class="mk-sub">
+<div>
+<h2>订阅每日主题提醒</h2>
+<p>每天零点推送当日主题、开放赛道与截止时间，不再错过投稿窗口。</p>
+</div>
+<form onsubmit="return false;">
+<input type="email" placeholder="输入常用邮箱">
+<button type="button">订阅赛程</button>
+</form>
+</div>
+</div>
+</section>
+
+<!-- 页脚 -->
+<footer class="mk-foot">
+<div class="wrap">
+<div class="mk-foot-grid">
+<div>
+<h4>每日主题大赛在线</h4>
+<p>聚合每日命题主题、赛程时间、评分标准与获奖作品的参考型内容页面。信息以当日官方公告为准，本页仅作整理与阅读参考。</p>
+</div>
+<div>
+<h4>赛事栏目</h4>
+<a href="/#mk-intro">大赛简介</a>
+<a href="/#mk-cats">题材赛道</a>
+<a href="/#mk-hot">热门作品</a>
+<a href="/#mk-updates">每日更新</a>
+</div>
+<div>
+<h4>阅读帮助</h4>
+<a href="/#mk-deep">深度解析</a>
+<a href="/#mk-guide">参赛指南</a>
+<a href="/#mk-faq">常见问题</a>
+<a href="/#mk-comments">创作者评论</a>
+</div>
+<div>
+<h4>友情链接</h4>
+<a href="/#mk-news">赛事资讯</a>
+<a href="/#mk-sub">订阅提醒</a>
+<a href="/#top">返回顶部</a>
+<a href="/#mk-intro">内容说明</a>
+</div>
+</div>
+<div class="mk-foot-bottom">
+<span>© 2026 每日主题大赛在线 · 内容整理与阅读参考</span>
+<span>免责声明：本页信息为公开内容整理，赛事规则与时间以官方当日公告为准。</span>
+</div>
+</div>
+</footer>
+
+<script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+</body>
+  </html>
