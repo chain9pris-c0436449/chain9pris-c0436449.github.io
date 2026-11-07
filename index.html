@@ -1,0 +1,1283 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
+  <title>秘密入口-隐藏入口与秘密通道推荐_秘密入口指南与热门合集</title>
+  <meta name="description" content="秘密入口专题聚合隐藏入口、秘密通道与私密推荐内容。提供秘密入口类型解析、热门榜单、最新更新、FAQ与用户评论，助你快速发现值得探索的秘密入口与隐藏内容入口。">
+  <meta name="keywords" content="秘密入口,隐藏入口,秘密通道,秘密入口推荐,秘密入口指南">
+  <style>
+    /* 黑金高级专题风 · 杂志专题型骨架 · 左右分栏布局 */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    :root {
+      --bg-dark: #0b0a0c;
+      --bg-card: #141217;
+      --bg-card-hover: #1c1920;
+      --border-subtle: #2a252e;
+      --gold: #d4af37;
+      --gold-soft: #b8963c;
+      --gold-glow: rgba(212, 175, 55, 0.15);
+      --text-primary: #f0ece4;
+      --text-secondary: #b0a9a0;
+      --text-muted: #6e6860;
+      --radius-card: 16px;
+      --radius-sm: 10px;
+      --shadow-card: 0 8px 24px rgba(0, 0, 0, 0.6);
+      --shadow-hover: 0 16px 32px rgba(0, 0, 0, 0.8);
+      --font-sans: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+    }
+
+    body {
+      background: var(--bg-dark);
+      color: var(--text-primary);
+      font-family: var(--font-sans);
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    ul {
+      list-style: none;
+    }
+
+    .wrap {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+
+    /* 顶部导航 */
+    .top-nav {
+      background: rgba(11, 10, 12, 0.92);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid var(--border-subtle);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    .top-nav .wrap {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 64px;
+    }
+
+    .logo-badge {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .logo-icon {
+      width: 32px;
+      height: 32px;
+      background: var(--gold);
+      border-radius: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 800;
+      font-size: 18px;
+      color: #0b0a0c;
+      transform: rotate(-8deg);
+      box-shadow: 0 0 20px var(--gold-glow);
+    }
+
+    .logo-text {
+      font-size: 20px;
+      font-weight: 700;
+      letter-spacing: 1px;
+      color: var(--gold);
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 28px;
+      font-size: 15px;
+      color: var(--text-secondary);
+    }
+
+    .nav-links a:hover {
+      color: var(--gold);
+    }
+
+    .nav-extra {
+      display: flex;
+      gap: 16px;
+      align-items: center;
+      font-size: 14px;
+      color: var(--text-muted);
+    }
+
+    .nav-extra .hot-tag {
+      background: var(--gold);
+      color: #0b0a0c;
+      font-weight: 700;
+      padding: 4px 10px;
+      border-radius: 20px;
+      font-size: 12px;
+    }
+
+    /* 首屏 Banner */
+    .hero-banner {
+      padding: 56px 0 48px;
+      background: radial-gradient(circle at 30% 20%, #1a1720 0%, #0b0a0c 80%);
+      border-bottom: 1px solid var(--border-subtle);
+    }
+
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 1fr 0.75fr;
+      gap: 48px;
+      align-items: center;
+    }
+
+    .hero-title {
+      font-size: 48px;
+      font-weight: 800;
+      line-height: 1.15;
+      letter-spacing: -0.5px;
+      margin-bottom: 16px;
+    }
+
+    .hero-title .gold-accent {
+      color: var(--gold);
+      position: relative;
+      display: inline-block;
+    }
+
+    .hero-title .gold-accent::after {
+      content: '';
+      position: absolute;
+      bottom: 4px;
+      left: 0;
+      width: 100%;
+      height: 6px;
+      background: var(--gold);
+      opacity: 0.25;
+      border-radius: 3px;
+    }
+
+    .hero-desc {
+      font-size: 17px;
+      color: var(--text-secondary);
+      margin-bottom: 12px;
+      max-width: 560px;
+    }
+
+    .hero-subdesc {
+      font-size: 15px;
+      color: var(--text-muted);
+      margin-bottom: 28px;
+      max-width: 560px;
+    }
+
+    .search-bar {
+      display: flex;
+      background: #1a1720;
+      border: 1px solid var(--border-subtle);
+      border-radius: 48px;
+      padding: 6px 6px 6px 22px;
+      max-width: 480px;
+      align-items: center;
+      transition: border-color 0.2s;
+    }
+
+    .search-bar:focus-within {
+      border-color: var(--gold);
+      box-shadow: 0 0 0 3px var(--gold-glow);
+    }
+
+    .search-bar input {
+      flex: 1;
+      background: transparent;
+      border: none;
+      outline: none;
+      color: var(--text-primary);
+      font-size: 15px;
+      padding: 8px 0;
+    }
+
+    .search-bar input::placeholder {
+      color: var(--text-muted);
+    }
+
+    .search-bar button {
+      background: var(--gold);
+      border: none;
+      border-radius: 40px;
+      padding: 10px 24px;
+      font-weight: 700;
+      color: #0b0a0c;
+      cursor: pointer;
+      font-size: 14px;
+      transition: background 0.2s;
+    }
+
+    .search-bar button:hover {
+      background: #e5c04e;
+    }
+
+    .hero-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-top: 24px;
+    }
+
+    .hero-tags a {
+      background: rgba(255, 255, 255, 0.04);
+      border: 1px solid var(--border-subtle);
+      padding: 6px 16px;
+      border-radius: 40px;
+      font-size: 13px;
+      color: var(--text-secondary);
+      transition: all 0.2s;
+    }
+
+    .hero-tags a:hover {
+      border-color: var(--gold);
+      color: var(--gold);
+      background: var(--gold-glow);
+    }
+
+    .hero-cover {
+      background: linear-gradient(145deg, #1e1a24, #0f0d12);
+      border-radius: var(--radius-card);
+      padding: 32px 28px;
+      border: 1px solid var(--border-subtle);
+      box-shadow: var(--shadow-card);
+      min-height: 240px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .hero-cover-stat {
+      display: flex;
+      gap: 24px;
+      margin-top: 16px;
+    }
+
+    .stat-item .num {
+      font-size: 28px;
+      font-weight: 800;
+      color: var(--gold);
+      line-height: 1.2;
+    }
+
+    .stat-item .label {
+      font-size: 13px;
+      color: var(--text-muted);
+    }
+
+    /* 通用 section */
+    .section {
+      padding: 56px 0;
+    }
+
+    .section-header {
+      display: flex;
+      align-items: baseline;
+      justify-content: space-between;
+      margin-bottom: 32px;
+    }
+
+    .section-title {
+      font-size: 28px;
+      font-weight: 700;
+      letter-spacing: -0.3px;
+    }
+
+    .section-title .gold-dot {
+      color: var(--gold);
+      margin-right: 10px;
+    }
+
+    .section-more {
+      font-size: 14px;
+      color: var(--text-muted);
+      border-bottom: 1px dashed var(--border-subtle);
+      padding-bottom: 2px;
+    }
+
+    .section-more:hover {
+      color: var(--gold);
+    }
+
+    /* 热门推荐卡片网格 */
+    .card-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
+    }
+
+    .rec-card {
+      background: var(--bg-card);
+      border-radius: var(--radius-card);
+      border: 1px solid var(--border-subtle);
+      padding: 24px 20px;
+      transition: transform 0.2s, box-shadow 0.2s, border-color 0.2s;
+      box-shadow: var(--shadow-card);
+      display: flex;
+      flex-direction: column;
+    }
+
+    .rec-card:hover {
+      transform: translateY(-4px);
+      box-shadow: var(--shadow-hover);
+      border-color: var(--gold-soft);
+    }
+
+    .rec-card .badge-line {
+      display: flex;
+      gap: 8px;
+      flex-wrap: wrap;
+      margin-bottom: 12px;
+    }
+
+    .badge {
+      font-size: 11px;
+      padding: 3px 10px;
+      border-radius: 20px;
+      background: rgba(212, 175, 55, 0.12);
+      color: var(--gold);
+      border: 1px solid rgba(212, 175, 55, 0.2);
+    }
+
+    .badge.secondary {
+      background: rgba(255, 255, 255, 0.04);
+      color: var(--text-secondary);
+      border-color: var(--border-subtle);
+    }
+
+    .rec-card h3 {
+      font-size: 18px;
+      font-weight: 700;
+      margin-bottom: 8px;
+      line-height: 1.3;
+    }
+
+    .rec-card p {
+      font-size: 14px;
+      color: var(--text-secondary);
+      margin-bottom: 16px;
+      flex: 1;
+    }
+
+    .card-meta {
+      display: flex;
+      justify-content: space-between;
+      font-size: 12px;
+      color: var(--text-muted);
+      border-top: 1px solid var(--border-subtle);
+      padding-top: 14px;
+    }
+
+    .card-meta .hot {
+      color: var(--gold-soft);
+    }
+
+    /* 左右分栏布局：主内容 + 侧边栏 */
+    .split-layout {
+      display: grid;
+      grid-template-columns: 1fr 320px;
+      gap: 40px;
+    }
+
+    /* 深度解析正文 */
+    .deep-article {
+      background: var(--bg-card);
+      border-radius: var(--radius-card);
+      border: 1px solid var(--border-subtle);
+      padding: 36px 32px;
+      box-shadow: var(--shadow-card);
+    }
+
+    .deep-article h2 {
+      font-size: 26px;
+      margin-bottom: 20px;
+      color: var(--gold);
+    }
+
+    .deep-article h3 {
+      font-size: 19px;
+      margin: 28px 0 12px;
+      color: var(--text-primary);
+    }
+
+    .deep-article p {
+      color: var(--text-secondary);
+      font-size: 15px;
+      margin-bottom: 18px;
+      line-height: 1.8;
+    }
+
+    .deep-article strong {
+      color: var(--gold-soft);
+      font-weight: 600;
+    }
+
+    /* 侧边栏 */
+    .sidebar {
+      display: flex;
+      flex-direction: column;
+      gap: 28px;
+    }
+
+    .side-card {
+      background: var(--bg-card);
+      border-radius: var(--radius-card);
+      border: 1px solid var(--border-subtle);
+      padding: 24px 22px;
+      box-shadow: var(--shadow-card);
+    }
+
+    .side-card h3 {
+      font-size: 17px;
+      margin-bottom: 18px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .side-card h3 .icon {
+      color: var(--gold);
+    }
+
+    .update-list li {
+      display: flex;
+      justify-content: space-between;
+      padding: 10px 0;
+      border-bottom: 1px solid var(--border-subtle);
+      font-size: 14px;
+    }
+
+    .update-list li:last-child {
+      border-bottom: none;
+    }
+
+    .update-list .name {
+      color: var(--text-primary);
+    }
+
+    .update-list .time {
+      color: var(--text-muted);
+      font-size: 12px;
+    }
+
+    .tag-cloud {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    .tag-cloud a {
+      background: rgba(255, 255, 255, 0.04);
+      padding: 6px 14px;
+      border-radius: 40px;
+      font-size: 13px;
+      color: var(--text-secondary);
+      border: 1px solid var(--border-subtle);
+    }
+
+    .tag-cloud a:hover {
+      border-color: var(--gold);
+      color: var(--gold);
+    }
+
+    /* FAQ 手风琴风格 */
+    .faq-list {
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+    }
+
+    .faq-item {
+      background: var(--bg-card);
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-sm);
+      padding: 18px 22px;
+      transition: border-color 0.2s;
+    }
+
+    .faq-item:hover {
+      border-color: var(--gold-soft);
+    }
+
+    .faq-q {
+      font-size: 16px;
+      font-weight: 600;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      cursor: default;
+    }
+
+    .faq-q .plus {
+      color: var(--gold);
+      font-size: 20px;
+      font-weight: 300;
+    }
+
+    .faq-a {
+      margin-top: 12px;
+      font-size: 14px;
+      color: var(--text-secondary);
+      line-height: 1.7;
+      padding-top: 12px;
+      border-top: 1px solid var(--border-subtle);
+    }
+
+    /* 评论双列 */
+    .comment-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 18px;
+    }
+
+    .comment-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-sm);
+      padding: 18px 20px;
+    }
+
+    .comment-header {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 10px;
+    }
+
+    .avatar {
+      width: 32px;
+      height: 32px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, var(--gold-soft), #5e4b1a);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 700;
+      font-size: 14px;
+      color: #0b0a0c;
+    }
+
+    .comment-name {
+      font-weight: 600;
+      font-size: 14px;
+    }
+
+    .comment-date {
+      font-size: 11px;
+      color: var(--text-muted);
+      margin-left: auto;
+    }
+
+    .comment-text {
+      font-size: 14px;
+      color: var(--text-secondary);
+      line-height: 1.7;
+    }
+
+    /* 资讯卡片 */
+    .news-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 22px;
+    }
+
+    .news-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-sm);
+      padding: 22px 20px;
+      transition: border-color 0.2s;
+    }
+
+    .news-card:hover {
+      border-color: var(--gold-soft);
+    }
+
+    .news-date {
+      font-size: 12px;
+      color: var(--gold-soft);
+      margin-bottom: 8px;
+    }
+
+    .news-card h4 {
+      font-size: 16px;
+      margin-bottom: 8px;
+      line-height: 1.4;
+    }
+
+    .news-card p {
+      font-size: 13px;
+      color: var(--text-muted);
+    }
+
+    /* 分类快捷入口 */
+    .cat-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 16px;
+    }
+
+    .cat-item {
+      background: var(--bg-card);
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-sm);
+      padding: 20px 16px;
+      text-align: center;
+      transition: all 0.2s;
+    }
+
+    .cat-item:hover {
+      border-color: var(--gold);
+      background: var(--bg-card-hover);
+    }
+
+    .cat-icon {
+      font-size: 24px;
+      margin-bottom: 8px;
+      display: block;
+    }
+
+    .cat-name {
+      font-size: 14px;
+      font-weight: 600;
+    }
+
+    .cat-count {
+      font-size: 12px;
+      color: var(--text-muted);
+      margin-top: 4px;
+    }
+
+    /* 页脚 */
+    .site-footer {
+      background: #08070a;
+      border-top: 1px solid var(--border-subtle);
+      padding: 48px 0 32px;
+      margin-top: 40px;
+    }
+
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 2fr 1fr 1fr 1fr;
+      gap: 40px;
+      margin-bottom: 36px;
+    }
+
+    .footer-brand p {
+      font-size: 13px;
+      color: var(--text-muted);
+      margin-top: 12px;
+      max-width: 300px;
+    }
+
+    .footer-col h5 {
+      font-size: 15px;
+      margin-bottom: 16px;
+      color: var(--text-primary);
+    }
+
+    .footer-col a {
+      display: block;
+      font-size: 13px;
+      color: var(--text-muted);
+      margin-bottom: 8px;
+    }
+
+    .footer-col a:hover {
+      color: var(--gold);
+    }
+
+    .footer-bottom {
+      border-top: 1px solid var(--border-subtle);
+      padding-top: 24px;
+      display: flex;
+      justify-content: space-between;
+      font-size: 12px;
+      color: var(--text-muted);
+    }
+
+    /* 响应式 */
+    @media (max-width: 1024px) {
+      .hero-grid {
+        grid-template-columns: 1fr;
+        gap: 32px;
+      }
+      .split-layout {
+        grid-template-columns: 1fr;
+      }
+      .card-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+      .news-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+      .cat-grid {
+        grid-template-columns: repeat(4, 1fr);
+      }
+      .footer-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (max-width: 768px) {
+      .hero-title {
+        font-size: 32px;
+      }
+      .card-grid {
+        grid-template-columns: 1fr;
+      }
+      .news-grid {
+        grid-template-columns: 1fr;
+      }
+      .comment-grid {
+        grid-template-columns: 1fr;
+      }
+      .cat-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+      .nav-links {
+        display: none;
+      }
+      .footer-grid {
+        grid-template-columns: 1fr;
+      }
+      .section {
+        padding: 36px 0;
+      }
+      .deep-article {
+        padding: 24px 20px;
+      }
+      .hero-banner {
+        padding: 32px 0;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- 顶部导航 -->
+  <header class="top-nav">
+    <div class="wrap">
+      <a href="/#top-nav" class="logo-badge">
+        <span class="logo-icon">秘</span>
+        <span class="logo-text">秘密入口</span>
+      </a>
+      <nav class="nav-links">
+        <a href="/#hot-recommend">热门推荐</a>
+        <a href="/#deep-analysis">深度解析</a>
+        <a href="/#category">分类入口</a>
+        <a href="/#faq">常见问题</a>
+        <a href="/#comments">用户评论</a>
+      </nav>
+      <div class="nav-extra">
+        <span class="hot-tag">今日更新</span>
+      </div>
+    </div>
+  </header>
+
+  <!-- 首屏 Banner -->
+  <section class="hero-banner" id="top-nav">
+    <div class="wrap hero-grid">
+      <div>
+        <h1 class="hero-title">秘密入口<span class="gold-accent">专题</span> · 隐藏通道与私密推荐</h1>
+        <p class="hero-desc">汇聚全网值得探索的秘密入口、隐藏通道与私密内容，每日更新热门入口与深度指南。</p>
+        <p class="hero-subdesc">从类型解析到入口推荐，从最新动态到用户真实评价，帮你高效发现下一个值得进入的秘密入口。</p>
+        <div class="search-bar">
+          <input type="text" placeholder="搜索秘密入口、隐藏通道、私密推荐…" aria-label="搜索秘密入口">
+          <button type="button">搜索</button>
+        </div>
+        <div class="hero-tags">
+          <a href="/#hot-recommend">隐藏入口</a>
+          <a href="/#latest">最新更新</a>
+          <a href="/#deep-analysis">深度解析</a>
+          <a href="/#category">分类导航</a>
+          <a href="/#faq">新人答疑</a>
+          <a href="/#comments">用户口碑</a>
+          <a href="/#news">入口资讯</a>
+        </div>
+      </div>
+      <div class="hero-cover">
+        <div style="font-size: 13px; color: var(--text-muted); letter-spacing: 2px; margin-bottom: 8px;">SECRET ENTRY</div>
+        <div style="font-size: 22px; font-weight: 700; color: var(--gold); margin-bottom: 8px;">收录 2,800+ 入口线索</div>
+        <div style="font-size: 14px; color: var(--text-secondary);">每日人工筛选 · 持续更新</div>
+        <div class="hero-cover-stat">
+          <div class="stat-item">
+            <div class="num">2.8k</div>
+            <div class="label">入口线索</div>
+          </div>
+          <div class="stat-item">
+            <div class="num">156</div>
+            <div class="label">今日新增</div>
+          </div>
+          <div class="stat-item">
+            <div class="num">98%</div>
+            <div class="label">有效收录</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 内容简介 -->
+  <section class="section" id="intro">
+    <div class="wrap">
+      <div class="section-header">
+        <h2 class="section-title"><span class="gold-dot">◆</span>秘密入口内容简介</h2>
+        <a href="/#deep-analysis" class="section-more">深入解析 ↓</a>
+      </div>
+      <div style="background: var(--bg-card); border-radius: var(--radius-card); border: 1px solid var(--border-subtle); padding: 36px 32px; box-shadow: var(--shadow-card);">
+        <p style="color: var(--text-secondary); font-size: 15px; line-height: 1.9; margin-bottom: 18px;">
+          <strong style="color: var(--gold);">秘密入口</strong>在当下内容生态中，指的是一类不直接暴露在主流导航中的隐藏通道、私密推荐或限定访问路径。很多用户搜索“秘密入口”时，实际需求是找到那些需要特定线索才能触达的内容集合——可能是独立创作者的隐藏合集、某个社群的私密分享通道、或是小众平台的限定入口。本专题正是围绕这一需求，将分散的入口信息进行系统化整理。
+        </p>
+        <p style="color: var(--text-secondary); font-size: 15px; line-height: 1.9; margin-bottom: 18px;">
+          适合对隐藏内容、小众资源、私密通道感兴趣的用户。无论你是初次接触秘密入口的新手，还是已经习惯自己挖掘隐藏路径的老手，这里都能提供可参考的入口分类、热度排序和用户真实反馈。页面涵盖入口类型解析、热门榜单、最新动态、常见问题与评论聚合，帮助你降低筛选成本，快速判断哪些秘密入口值得花时间探索。
+        </p>
+        <p style="color: var(--text-secondary); font-size: 15px; line-height: 1.9;">
+          如果你习惯收藏优质内容站点，本页也值得加入书签——我们持续追踪秘密入口相关的更新与变化，用编辑视角帮你过滤噪音，保留真正有浏览价值的入口线索。从入口的稳定性、内容质量到访问体验，多维度呈现，让每一次“进入”都更有目的性。
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 热门推荐 -->
+  <section class="section" id="hot-recommend">
+    <div class="wrap">
+      <div class="section-header">
+        <h2 class="section-title"><span class="gold-dot">◆</span>热门秘密入口推荐</h2>
+        <a href="/#latest" class="section-more">查看最新更新 →</a>
+      </div>
+      <div class="card-grid">
+        <article class="rec-card">
+          <div class="badge-line">
+            <span class="badge">隐藏通道</span>
+            <span class="badge secondary">高热度</span>
+          </div>
+          <h3>暗巷资源索引</h3>
+          <p>聚合独立站隐藏目录与限定入口，适合喜欢自己动手挖掘的探索型用户，更新频率高。</p>
+          <div class="card-meta">
+            <span class="hot">热度 9.4</span>
+            <span>今日更新</span>
+          </div>
+        </article>
+        <article class="rec-card">
+          <div class="badge-line">
+            <span class="badge">私密推荐</span>
+            <span class="badge secondary">口碑</span>
+          </div>
+          <h3>深夜入口合集</h3>
+          <p>精选夜间开放的限定入口，内容偏向深度长文与独立创作，适合安静阅读的场景。</p>
+          <div class="card-meta">
+            <span class="hot">热度 9.1</span>
+            <span>2小时前</span>
+          </div>
+        </article>
+        <article class="rec-card">
+          <div class="badge-line">
+            <span class="badge">秘密入口</span>
+            <span class="badge secondary">新人友好</span>
+          </div>
+          <h3>新手友好入口导航</h3>
+          <p>专门为初次接触秘密入口的用户整理的低门槛通道，附带简明指引，减少摸索成本。</p>
+          <div class="card-meta">
+            <span class="hot">热度 8.8</span>
+            <span>今日更新</span>
+          </div>
+        </article>
+        <article class="rec-card">
+          <div class="badge-line">
+            <span class="badge">工具型</span>
+            <span class="badge secondary">稳定</span>
+          </div>
+          <h3>入口状态监测页</h3>
+          <p>实时反馈秘密入口的可用状态，帮助用户避开失效链接，提升探索效率。</p>
+          <div class="card-meta">
+            <span class="hot">热度 8.7</span>
+            <span>实时更新</span>
+          </div>
+        </article>
+        <article class="rec-card">
+          <div class="badge-line">
+            <span class="badge">社群分享</span>
+            <span class="badge secondary">私密</span>
+          </div>
+          <h3>私享通道周报</h3>
+          <p>每周整理社群内部分享的隐藏入口与限定内容，偏向小众与深度，适合老用户。</p>
+          <div class="card-meta">
+            <span class="hot">热度 8.5</span>
+            <span>每周一更</span>
+          </div>
+        </article>
+        <article class="rec-card">
+          <div class="badge-line">
+            <span class="badge">视觉向</span>
+            <span class="badge secondary">精选</span>
+          </div>
+          <h3>视觉秘密入口特辑</h3>
+          <p>聚焦视觉类隐藏入口，包括独立摄影、设计资源与艺术合集，适合创作者参考。</p>
+          <div class="card-meta">
+            <span class="hot">热度 8.3</span>
+            <span>昨日更新</span>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- 左右分栏：深度解析 + 侧边栏 -->
+  <section class="section" id="deep-analysis">
+    <div class="wrap split-layout">
+      <!-- 主内容 -->
+      <div class="deep-article">
+        <h2>深度解析：秘密入口的类型、价值与筛选逻辑</h2>
+        <p>
+          搜索<strong>秘密入口</strong>的人，往往带着一种“不想错过”的心态。互联网上真正有价值的内容，很多时候并不在首页推荐流里，而是藏在某个需要线索才能触达的角落。本段从类型、内容吸引点、人群适配和筛选方法四个维度，帮你建立对秘密入口的完整认知框架。
+        </p>
+        <h3>一、秘密入口的主要类型</h3>
+        <p>
+          从入口的呈现方式来看，秘密入口大致可分为几类：其一是<strong>导航隐藏型</strong>，即站点本身有公开页面，但特定栏目或目录不对外展示，需要通过特定路径或关键词才能进入；其二是<strong>社群邀请型</strong>，入口藏在社群公告、私信或特定身份的分享中，有较强的圈层属性；其三是<strong>时效限定型</strong>，入口只在特定时间段开放，错过就要等下一轮；其四是<strong>线索解谜型</strong>，需要根据提示逐步推理才能找到最终地址。不同类型的秘密入口，对用户的探索能力和耐心要求完全不同。
+        </p>
+        <h3>二、内容吸引点在哪里</h3>
+        <p>
+          秘密入口的核心吸引力在于<strong>稀缺感与发现感</strong>。当内容被限制在某个入口之后，用户会天然地认为其质量高于公开内容。这种心理预期虽然不一定完全准确，但确实推动了一部分优质小众内容的传播。另一方面，秘密入口也承担着“过滤”功能——愿意花时间寻找入口的用户，往往对内容有更高的接受度和参与意愿，这反过来促成了更高质量的讨论氛围。
+        </p>
+        <h3>三、人物与内容特征</h3>
+        <p>
+          围绕秘密入口活跃的人群，大致可分为探索者、分享者和内容生产者。探索者热衷于挖掘新入口，享受“先发现”的成就感；分享者则倾向于在社群中交换入口线索，形成互助氛围；内容生产者利用秘密入口做小范围测试或私密发布，保持内容的独特调性。这三类人群共同构成了秘密入口生态的循环，也让入口本身具备了社交属性。
+        </p>
+        <h3>四、如何判断一个秘密入口是否值得进入</h3>
+        <p>
+          首先看<strong>入口的稳定性</strong>——频繁失效的入口会消耗大量时间，得不偿失。其次看<strong>内容与自身兴趣的匹配度</strong>，不要因为“秘密”二字就盲目追逐。再次看<strong>入口的维护者是否活跃</strong>，一个持续更新的入口远比一个长期无人打理的入口有价值。最后，可以参考本页的用户评论与热度数据，用他人的经验辅助判断。记住，秘密入口只是路径，内容本身才是目的。
+        </p>
+        <h3>五、同类内容比较与搜索意图</h3>
+        <p>
+          与普通的资源导航站相比，秘密入口专题更强调<strong>路径的隐蔽性与筛选价值</strong>。用户搜索“秘密入口”时，通常不是想要一个泛泛的列表，而是希望获得有筛选逻辑的推荐和真实体验反馈。因此本页在内容组织上更看重入口的类型标签、更新状态和用户评价，而不是单纯堆砌链接。如果你正在寻找一个能持续提供秘密入口线索的参考页，建议收藏并定期回访。
+        </p>
+      </div>
+
+      <!-- 侧边栏 -->
+      <aside class="sidebar">
+        <div class="side-card">
+          <h3><span class="icon">◈</span>最新更新动态</h3>
+          <ul class="update-list">
+            <li><span class="name">暗巷资源索引 · 新增3条</span><span class="time">10分钟前</span></li>
+            <li><span class="name">深夜入口合集 · 更新</span><span class="time">32分钟前</span></li>
+            <li><span class="name">私享通道周报 · 第47期</span><span class="time">2小时前</span></li>
+            <li><span class="name">新手导航 · 入口校验</span><span class="time">4小时前</span></li>
+            <li><span class="name">状态监测页 · 异常修复</span><span class="time">6小时前</span></li>
+            <li><span class="name">视觉特辑 · 新增图源</span><span class="time">昨天</span></li>
+          </ul>
+        </div>
+        <div class="side-card">
+          <h3><span class="icon">◇</span>热门标签</h3>
+          <div class="tag-cloud">
+            <a href="/#hot-recommend">隐藏入口</a>
+            <a href="/#latest">秘密通道</a>
+            <a href="/#deep-analysis">私密推荐</a>
+            <a href="/#category">导航隐藏</a>
+            <a href="/#faq">入口筛选</a>
+            <a href="/#comments">探索者</a>
+            <a href="/#news">限定开放</a>
+          </div>
+        </div>
+        <div class="side-card">
+          <h3><span class="icon">◉</span>入口数据速览</h3>
+          <p style="font-size:14px; color:var(--text-secondary); margin-bottom:8px;">今日收录入口线索 <strong style="color:var(--gold);">156</strong> 条</p>
+          <p style="font-size:14px; color:var(--text-secondary); margin-bottom:8px;">有效入口占比 <strong style="color:var(--gold);">98%</strong></p>
+          <p style="font-size:14px; color:var(--text-secondary);">用户平均停留 <strong style="color:var(--gold);">7分32秒</strong></p>
+        </div>
+      </aside>
+    </div>
+  </section>
+
+  <!-- 分类入口 -->
+  <section class="section" id="category">
+    <div class="wrap">
+      <div class="section-header">
+        <h2 class="section-title"><span class="gold-dot">◆</span>秘密入口分类导航</h2>
+        <span class="section-more">按类型快速定位</span>
+      </div>
+      <div class="cat-grid">
+        <a href="/#hot-recommend" class="cat-item">
+          <span class="cat-icon">🔍</span>
+          <div class="cat-name">导航隐藏型</div>
+          <div class="cat-count">642 个入口</div>
+        </a>
+        <a href="/#hot-recommend" class="cat-item">
+          <span class="cat-icon">🗝️</span>
+          <div class="cat-name">社群邀请型</div>
+          <div class="cat-count">388 个入口</div>
+        </a>
+        <a href="/#hot-recommend" class="cat-item">
+          <span class="cat-icon">⏳</span>
+          <div class="cat-name">时效限定型</div>
+          <div class="cat-count">295 个入口</div>
+        </a>
+        <a href="/#hot-recommend" class="cat-item">
+          <span class="cat-icon">🧩</span>
+          <div class="cat-name">线索解谜型</div>
+          <div class="cat-count">176 个入口</div>
+        </a>
+        <a href="/#hot-recommend" class="cat-item">
+          <span class="cat-icon">📖</span>
+          <div class="cat-name">深度阅读型</div>
+          <div class="cat-count">412 个入口</div>
+        </a>
+        <a href="/#hot-recommend" class="cat-item">
+          <span class="cat-icon">🎨</span>
+          <div class="cat-name">视觉资源型</div>
+          <div class="cat-count">263 个入口</div>
+        </a>
+        <a href="/#hot-recommend" class="cat-item">
+          <span class="cat-icon">🧰</span>
+          <div class="cat-name">工具辅助型</div>
+          <div class="cat-count">154 个入口</div>
+        </a>
+        <a href="/#hot-recommend" class="cat-item">
+          <span class="cat-icon">🌙</span>
+          <div class="cat-name">夜间限定型</div>
+          <div class="cat-count">201 个入口</div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- 最新更新 -->
+  <section class="section" id="latest">
+    <div class="wrap">
+      <div class="section-header">
+        <h2 class="section-title"><span class="gold-dot">◆</span>最新入口更新动态</h2>
+        <span class="section-more">2026年11月7日</span>
+      </div>
+      <div style="display: grid; gap: 14px;">
+        <div style="background: var(--bg-card); border: 1px solid var(--border-subtle); border-radius: var(--radius-sm); padding: 18px 22px; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 10px;">
+          <span style="font-weight: 600;">「暗巷资源索引」新增 3 条隐藏目录线索</span>
+          <span style="font-size: 13px; color: var(--text-muted);">10分钟前 · 入口更新</span>
+        </div>
+        <div style="background: var(--bg-card); border: 1px solid var(--border-subtle); border-radius: var(--radius-sm); padding: 18px 22px; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 10px;">
+          <span style="font-weight: 600;">「深夜入口合集」调整访问时段为 23:00-02:00</span>
+          <span style="font-size: 13px; color: var(--text-muted);">32分钟前 · 状态变更</span>
+        </div>
+        <div style="background: var(--bg-card); border: 1px solid var(--border-subtle); border-radius: var(--radius-sm); padding: 18px 22px; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 10px;">
+          <span style="font-weight: 600;">新手友好入口导航完成第 12 轮可用性校验</span>
+          <span style="font-size: 13px; color: var(--text-muted);">1小时前 · 校验完成</span>
+        </div>
+        <div style="background: var(--bg-card); border: 1px solid var(--border-subtle); border-radius: var(--radius-sm); padding: 18px 22px; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 10px;">
+          <span style="font-weight: 600;">私享通道周报第 47 期发布，新增 8 条社群分享入口</span>
+          <span style="font-size: 13px; color: var(--text-muted);">2小时前 · 周报更新</span>
+        </div>
+        <div style="background: var(--bg-card); border: 1px solid var(--border-subtle); border-radius: var(--radius-sm); padding: 18px 22px; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 10px;">
+          <span style="font-weight: 600;">入口状态监测页标记 2 条临时失效通道，已进入观察期</span>
+          <span style="font-size: 13px; color: var(--text-muted);">4小时前 · 监测提醒</span>
+        </div>
+        <div style="background: var(--bg-card); border: 1px solid var(--border-subtle); border-radius: var(--radius-sm); padding: 18px 22px; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 10px;">
+          <span style="font-weight: 600;">视觉秘密入口特辑更新 15 张独立摄影作品入口</span>
+          <span style="font-size: 13px; color: var(--text-muted);">6小时前 · 内容扩充</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="section" id="faq">
+    <div class="wrap">
+      <div class="section-header">
+        <h2 class="section-title"><span class="gold-dot">◆</span>秘密入口常见问题</h2>
+        <span class="section-more">新手答疑</span>
+      </div>
+      <div class="faq-list">
+        <div class="faq-item">
+          <div class="faq-q">秘密入口和普通导航站有什么区别？<span class="plus">+</span></div>
+          <div class="faq-a">普通导航站倾向于收录公开可访问的站点首页，而秘密入口专题更关注隐藏路径、限定通道和私密推荐。区别在于筛选逻辑：秘密入口更强调入口的稀缺性、稳定性和圈层属性，适合已经厌倦了大众化推荐、希望探索小众内容的用户。本页会标注入口类型和更新状态，帮助你判断是否值得进入。</div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-q">第一次接触秘密入口，应该从哪里开始？<span class="plus">+</span></div>
+          <div class="faq-a">建议从“新手友好入口导航”开始，这类入口门槛较低，附有基本指引，能帮你熟悉秘密入口的常见形态。之后再根据兴趣尝试“深度阅读型”或“视觉资源型”入口。不要一上来就挑战线索解谜型入口，容易因为失败而失去探索乐趣。本页分类导航中的“新手友好”标签可以作为起点参考。</div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-q">秘密入口失效了怎么办？<span class="plus">+</span></div>
+          <div class="faq-a">入口失效是秘密入口生态中的常态，尤其是时效限定型和社群邀请型入口。遇到失效时，可以先查看本页“入口状态监测页”的更新记录，确认是否为临时失效。如果是长期失效，建议转向同类型的其他入口，并在评论区留下反馈。我们会在收集到足够信息后更新入口状态，减少其他用户的时间浪费。</div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-q">如何判断一个秘密入口的内容质量？<span class="plus">+</span></div>
+          <div class="faq-a">可以从三个维度判断：一是入口维护者是否持续更新，活跃的入口通常质量更稳定；二是入口是否有明确的主题和筛选标准，泛泛的“什么都收”型入口往往价值有限；三是参考其他用户的真实评论，本页评论区会保留中性甚至批评性的反馈，帮助你看到更全面的入口面貌。不要仅凭入口名称或热度做判断。</div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-q">秘密入口适合哪些人使用？<span class="plus">+</span></div>
+          <div class="faq-a">适合对隐藏内容有好奇心的探索者、需要小众素材的创作者、以及喜欢安静阅读不想被大众推荐流干扰的用户。如果你只是想要一个快速获取热门内容的渠道，秘密入口可能不是最优选择，因为它的价值更多体现在“发现过程”和“内容独特性”上。明确自己的需求，再决定投入多少时间探索。</div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-q">本页会持续更新秘密入口线索吗？<span class="plus">+</span></div>
+          <div class="faq-a">会。本页以专题形式持续追踪秘密入口相关的更新，包括新增入口、状态变更和用户反馈。建议将页面加入收藏，定期查看“最新更新动态”和“入口状态监测页”。我们也欢迎通过评论区提供线索，编辑团队会筛选有价值的入口进行收录，共同维护一个高质量的入口参考页。</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 用户评论 -->
+  <section class="section" id="comments">
+    <div class="wrap">
+      <div class="section-header">
+        <h2 class="section-title"><span class="gold-dot">◆</span>用户评论与反馈</h2>
+        <span class="section-more">近30天真实讨论</span>
+      </div>
+      <div class="comment-grid">
+        <div class="comment-card">
+          <div class="comment-header"><span class="avatar">林</span><span class="comment-name">林间行者</span><span class="comment-date">11月6日</span></div>
+          <p class="comment-text">暗巷资源索引确实好用，更新频率很高，而且入口分类清晰。我基本每周都会来看一次，比自己在搜索引擎里瞎翻效率高多了。</p>
+        </div>
+        <div class="comment-card">
+          <div class="comment-header"><span class="avatar">夜</span><span class="comment-name">夜航星</span><span class="comment-date">11月5日</span></div>
+          <p class="comment-text">深夜入口合集的内容质量参差不齐，有些入口进去之后发现内容很少。不过作为探索起点还是可以的，至少能顺藤摸瓜找到一些不错的独立站点。</p>
+        </div>
+        <div class="comment-card">
+          <div class="comment-header"><span class="avatar">苏</span><span class="comment-name">苏打水</span><span class="comment-date">11月4日</span></div>
+          <p class="comment-text">新手友好入口导航帮了大忙，第一次接触秘密入口完全不知道从哪下手，这个分类让我少走了很多弯路。希望可以再增加一些图文指引。</p>
+        </div>
+        <div class="comment-card">
+          <div class="comment-header"><span class="avatar">陈</span><span class="comment-name">陈默</span><span class="comment-date">11月3日</span></div>
+          <p class="comment-text">入口状态监测页很实用，省得一个个去试。不过有些入口的判定标准可以再说明得清楚一点，比如“临时失效”和“永久失效”的区分。</p>
+        </div>
+        <div class="comment-card">
+          <div class="comment-header"><span class="avatar">阿</span><span class="comment-name">阿茶</span><span class="comment-date">11月2日</span></div>
+          <p class="comment-text">私享通道周报是我每周必看的，里面的入口偏小众但质量普遍不错，比那些大路货推荐有意思多了。希望周报能保持这个调性。</p>
+        </div>
+        <div class="comment-card">
+          <div class="comment-header"><span class="avatar">乔</span><span class="comment-name">乔一</span><span class="comment-date">11月1日</span></div>
+          <p class="comment-text">视觉秘密入口特辑里的摄影资源很棒，但部分入口需要特定权限，对非创作者不太友好。建议标注一下访问门槛，方便用户提前判断。</p>
+        </div>
+        <div class="comment-card">
+          <div class="comment-header"><span class="avatar">沐</span><span class="comment-name">沐风</span><span class="comment-date">10月30日</span></div>
+          <p class="comment-text">整体页面结构很清晰，分类和标签做得不错。就是希望热门推荐能再多一些轮换，每次来都是那几个入口，新鲜感会下降。</p>
+        </div>
+        <div class="comment-card">
+          <div class="comment-header"><span class="avatar">白</span><span class="comment-name">白露</span><span class="comment-date">10月29日</span></div>
+          <p class="comment-text">线索解谜型的入口太有意思了，虽然花了快一个小时才找到，但过程本身就很有参与感。希望这个分类能持续补充新内容。</p>
+        </div>
+        <div class="comment-card">
+          <div class="comment-header"><span class="avatar">徐</span><span class="comment-name">徐三</span><span class="comment-date">10月27日</span></div>
+          <p class="comment-text">说实话有些入口的“秘密”属性不强，感觉就是普通页面换了个说法。希望编辑能把关更严格一些，保持专题的独特价值。</p>
+        </div>
+        <div class="comment-card">
+          <div class="comment-header"><span class="avatar">江</span><span class="comment-name">江屿</span><span class="comment-date">10月25日</span></div>
+          <p class="comment-text">移动端浏览体验不错，加载速度也快。作为收藏夹里的常驻页面，希望后续能加上入口更新提醒功能。</p>
+        </div>
+        <div class="comment-card">
+          <div class="comment-header"><span class="avatar">温</span><span class="comment-name">温言</span><span class="comment-date">10月23日</span></div>
+          <p class="comment-text">深度解析那部分写得挺扎实的，不是简单罗列链接，而是讲了怎么筛选入口。这种内容比纯工具页更有参考价值。</p>
+        </div>
+        <div class="comment-card">
+          <div class="comment-header"><span class="avatar">顾</span><span class="comment-name">顾北</span><span class="comment-date">10月21日</span></div>
+          <p class="comment-text">建议增加一个“入口历史”功能，有些限时入口错过了还能看到曾经的存在记录，对了解入口生态也有帮助。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 相关资讯 -->
+  <section class="section" id="news">
+    <div class="wrap">
+      <div class="section-header">
+        <h2 class="section-title"><span class="gold-dot">◆</span>秘密入口相关资讯</h2>
+        <span class="section-more">更多动态</span>
+      </div>
+      <div class="news-grid">
+        <article class="news-card">
+          <div class="news-date">2026-11-07</div>
+          <h4>本周秘密入口更新观察：隐藏目录类入口增长明显</h4>
+          <p>过去一周导航隐藏型入口新增数量环比上升 18%，用户对无需邀请即可探索的入口偏好度提升。</p>
+        </article>
+        <article class="news-card">
+          <div class="news-date">2026-11-06</div>
+          <h4>深夜限定入口访问时段调整，用户反馈两极</h4>
+          <p>部分夜间入口缩短开放时间，有用户认为提升了稀缺感，也有用户表示时间窗口太窄不便访问。</p>
+        </article>
+        <article class="news-card">
+          <div class="news-date">2026-11-05</div>
+          <h4>入口状态监测工具升级，新增失效预警功能</h4>
+          <p>监测页现在支持提前标记可能失效的入口，帮助用户在进入前快速判断通道稳定性。</p>
+        </article>
+        <article class="news-card">
+          <div class="news-date">2026-11-03</div>
+          <h4>私享通道周报第47期：社群分享入口质量回升</h4>
+          <p>本期周报收录 8 条新入口，编辑评分普遍高于上期，其中 3 条被标记为“值得长期关注”。</p>
+        </article>
+        <article class="news-card">
+          <div class="news-date">2026-11-01</div>
+          <h4>视觉类秘密入口专题扩容，新增独立摄影作品入口</h4>
+          <p>视觉特辑本次更新 15 张作品入口，涵盖纪实、抽象与实验摄影，适合创作者寻找灵感来源。</p>
+        </article>
+        <article class="news-card">
+          <div class="news-date">2026-10-29</div>
+          <h4>新手入口导航完成第12轮校验，可用率保持98%</h4>
+          <p>团队对新手友好入口进行例行校验，移除 2 条失效通道，新增 5 条低门槛替代入口。</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- 订阅引导 -->
+  <section class="section" style="padding-bottom: 20px;">
+    <div class="wrap">
+      <div style="background: linear-gradient(135deg, #1a1720, #0f0d12); border: 1px solid var(--border-subtle); border-radius: var(--radius-card); padding: 48px 40px; text-align: center; box-shadow: var(--shadow-card);">
+        <h2 style="font-size: 28px; margin-bottom: 12px;">不错过下一个秘密入口</h2>
+        <p style="color: var(--text-secondary); margin-bottom: 24px; font-size: 15px;">收藏本页，定期查看最新更新与入口状态，持续发现值得探索的隐藏通道。</p>
+        <a href="/#latest" style="display: inline-block; background: var(--gold); color: #0b0a0c; font-weight: 700; padding: 14px 40px; border-radius: 40px; font-size: 15px;">查看最新更新</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- 页脚 -->
+  <footer class="site-footer">
+    <div class="wrap">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div style="font-size: 20px; font-weight: 700; color: var(--gold);">秘密入口</div>
+          <p>专注隐藏通道与私密推荐的内容专题页，持续收录、筛选并更新有价值的秘密入口线索。</p>
+        </div>
+        <div class="footer-col">
+          <h5>内容导航</h5>
+          <a href="/#hot-recommend">热门推荐</a>
+          <a href="/#deep-analysis">深度解析</a>
+          <a href="/#category">分类入口</a>
+          <a href="/#latest">最新更新</a>
+        </div>
+        <div class="footer-col">
+          <h5>帮助与反馈</h5>
+          <a href="/#faq">常见问题</a>
+          <a href="/#comments">用户评论</a>
+          <a href="/#news">相关资讯</a>
+          <a href="/#intro">内容简介</a>
+        </div>
+        <div class="footer-col">
+          <h5>友情链接</h5>
+          <a href="/#top-nav">秘密入口首页</a>
+          <a href="/#hot-recommend">入口索引</a>
+          <a href="/#category">分类导航</a>
+          <a href="/#faq">答疑中心</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2026 秘密入口专题 · 内容仅供参考与学习交流</span>
+        <span>免责声明：本页不存储任何资源文件，入口信息来源于公开分享与用户反馈。</span>
+      </div>
+    </div>
+  </footer>
+
+  <script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+</body>
+  </html>
